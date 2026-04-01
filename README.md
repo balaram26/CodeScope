@@ -2,10 +2,9 @@
 
 **Understand entire projects — code, workflows, and results.**
 
-CodeScope is an open-source system designed to analyze real-world projects, where meaning is distributed across code, pipelines, configurations, documentation, and generated results.
+CodeScope is built for real-world projects — where logic is spread across code, workflows, configs, and outputs — not just clean codebases.
 
 It builds a structured understanding of your project and lets you ask questions grounded in actual project evidence.
-
 ---
 
 ## 🚀 Why this is different
@@ -68,7 +67,7 @@ CodeScope is designed to work with **mixed project repositories** and currently 
 
 ---
 
-## 🧠 How parsing works
+## ⚙️ How it works
 
 Each file type is handled by a specialized parser that extracts:
 
@@ -87,10 +86,7 @@ This information is later used to build a unified project index.
 * Support for additional languages and formats is planned
 
 ---
-
-# 💡 Optional (nice touch)
-
-Add:
+## 💡 Behavior on unsupported files
 
 ```md
 If a file type is not explicitly supported, it may still be indexed as raw text.
