@@ -113,7 +113,7 @@ Ask questions like:
 ## ⚙️ Installation
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/balaram26/CodeScope.git
 cd project-intelligence
 pip install -e .
 pip install -r requirements.txt
