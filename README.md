@@ -39,6 +39,64 @@ It reconstructs **how a project actually works**, not just what individual files
 
 ---
 
+## 🧾 Supported File Types
+
+CodeScope is designed to work with **mixed project repositories** and currently supports parsing:
+
+### 🧑‍💻 Code
+
+* Python (`.py`)
+* R (`.R`, `.r`)
+* C/C++ (`.cpp`, `.h`)
+
+### 🔁 Workflows & Scripts
+
+* Shell scripts (`.sh`)
+* Nextflow pipelines (`.nf`)
+* Nextflow config (`nextflow.config`)
+
+### ⚙️ Configuration & Data
+
+* YAML (`.yaml`, `.yml`)
+* JSON (`.json`)
+* Tabular files (`.csv`, `.tsv`)
+
+### 📄 Documentation
+
+* Markdown (`.md`)
+* Dockerfiles
+
+---
+
+## 🧠 How parsing works
+
+Each file type is handled by a specialized parser that extracts:
+
+* structure (functions, blocks, steps)
+* metadata (names, parameters, relationships)
+* execution logic (for scripts and workflows)
+
+This information is later used to build a unified project index.
+
+---
+
+## ⚠️ Notes
+
+* Parsing coverage varies by file type
+* Some formats (like scripts and workflows) are interpreted structurally rather than fully semantically
+* Support for additional languages and formats is planned
+
+---
+
+# 💡 Optional (nice touch)
+
+Add:
+
+```md
+If a file type is not explicitly supported, it may still be indexed as raw text.
+```
+---
+
 ## 💡 Use cases
 
 - Multiple projects running in parallel
