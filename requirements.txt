@@ -1,0 +1,7 @@
+streamlit
+numpy
+faiss-cpu
+openai
+PyYAML
+sentence-transformers
+llama-cpp-python

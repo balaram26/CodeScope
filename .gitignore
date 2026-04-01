@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environments
+.env
+.env.*
+venv/
+.venv/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Logs / temp
+logs/
+work/
+uploads/
+
+# --- Ignore runtime data by default ---
+data/
+library/
+
+# --- BUT allow demo project data ---
+!data/projects/
+!data/projects/**
+!library/projects/
+!library/projects/**
+
+# SQLite / index files ignored by default
+*.sqlite
+*.sqlite.*
+*.npy
+*.index
+*.jsonl
+
+# --- BUT allow committed demo index + DB ---
+!data/projects/db/projects.sqlite
+!data/projects/global_index/**
+!library/projects/generated/**
